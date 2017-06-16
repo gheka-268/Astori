@@ -73,10 +73,10 @@ if(!empty($_POST['full_name']) && !empty($_POST['email']) && !empty($_POST['user
 	
 
 		<p class="submit">
-		<input type="submit" name="Регистрация" id="register" class="button" value="Register" />
+		<input type="submit" name="register" id="register" class="button" value="Регистрация" />
 	</p>
 	
-	<p class="regtext">У вас уже есть учетная запись? <a href="../index.php" >Вход в систему</a>!</p>
+	<p class="regtext">У вас уже есть учетная запись? <a href="index.html" >Вход в систему</a>!</p>
 </form>
 	
 	</div>
