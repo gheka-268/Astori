@@ -1,0 +1,201 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+.top_header {
+	background-image: url(../img/fon_menu.jpg);
+	background-size: cover;
+}
+.logo img {
+	width: 150px;
+}
+.menu {
+	display: inline-block;
+}
+.menu ul li, a {
+	list-style-type: none; 
+	display: inline-block;
+	text-transform: uppercase;
+	color: white;
+	margin-right: 5px;
+	line-height: 45px;
+}
+.phone {
+	font-size: 25px;
+	font-family: RobotoBold;
+	color: rgb(204,0,51);
+	line-height: 75px; 
+}
+.soc_buttons {
+	font-size: 30px;
+	line-height: 75px;
+	text-align: center;
+}
+.slider {
+	height: 500px;
+	background-image: url(../img/office.jpg);
+	background-size: cover;
+	opacity: 0.8;
+}
+.slider_cont {
+	position: relative;
+	height: 500px;
+}
+.slider_text {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+.slider_text a {
+	background-color: silver;
+	opacity: 0.8;
+	font-size: 24px;
+	font-family: RobotoBold;
+	color: black;
+	padding:10px;
+	text-align: center;
+	text-transform: none;
+	border-radius: 5px;
+}
+/*It-задачи*/
+.zadachi {
+	background-image: url(../img/fon.jpg);
+	background-size: cover;
+}
+.tm-underline{position:relative;}
+.tm-underline:before{content:"";display:block;position:absolute;bottom:0;left:0;right:0;height:2px;background-color:red;}
+.it-work {
+	text-align: center;
+	color: white;
+}
+.it-job {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.it-job span {
+	position: relative;
+	display: block;
+	width: 270px;
+	height: 270px;
+	background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    vertical-align: center;
+    padding-top: 60px;
+    -moz-box-shadow:0 0 -20px #fff;
+	-webkit-box-shadow:0 0 -20px #fff;
+	box-shadow: inset 0 0 20px #fff;
+    
+}
+.strela {
+	position: absolute;
+	width: 100%;
+	bottom: -46px;
+	text-align: center;
+}
+.strela img {
+	width: 200px;
+}
+.strela-rieght::after {
+	content: url(../img/strelka.png);
+	margin-left: 180px;
+}
+.strela-left::after {
+	content: url(../img/strelka-left.png);
+	margin-left: -225px;
+}
+.strelka_vniz {
+	text-align: center;
+}
+.strelka_vniz img {
+	width: 250px;
+}
+.it-job span:hover {
+	-webkit-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+.it-job p {
+	font-size: 18px;
+	font-family: RobotoBold;
+}
+.pochemu {
+	display: block;
+	width: 90%;
+	background: rgba(0, 0, 0, 0);
+    color: #414d5a;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 20px;
+    margin:0 auto;
+    color: white;
+    
+}
+.pochemu h3 {
+	margin-bottom:15px;
+	font-size:30px;
+	line-height:33px;
+	font-weight:300;
+	text-transform:none;
+	color: white;
+}
+.pochemu ul li .pochemu p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 550;
+}
+.wugodi h1 {
+	color: white;
+	font-family: RobotoBold;
+}
+.wugodi p {
+	color: white;
+}
+.wugodi ul li {
+	color: white;
+}
+.wugodi ul {
+	list-style-image: url(../img/galka.png);
+}
+.partner img {
+	width: 350px;
+	padding-top: 10px;
+}
+.parallelogram {
+    width: 450px;
+    height: 50px;
+    -webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+    color: white;
+    padding-left: 10px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
