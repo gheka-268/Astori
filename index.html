@@ -1,3 +1,7 @@
+<?php
+    //  вся процедура работает на сессиях. Именно в ней хранятся данные  пользователя, пока он находится на сайте. Очень важно запустить их в  самом начале странички!!!
+    session_start();
+    ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 <!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
@@ -7,7 +11,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>TAUSOFT</title>
+	<title>Astori</title>
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +24,41 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<?php
+require_once 'admin/config/db_config.php'; // подключаем скрипт
+ 
+// подключаемся к серверу
+$link = mysqli_connect($host, $user, $password, $database) 
+    or die("Ошибка " . mysqli_error($link));
+ 
+// выполняем операции с базой данных
+     
+// закрываем подключение
+mysqli_close($link);
+?>
 
+<div class="container mlogin">
+<div id="login">
+<h1>Вход</h1>
+<form action="" id="loginform" method="post" name="loginform">
+<p><label for="user_login">Имя пользователя<br>
+<input class="input" id="username" name="username" size="20"
+ type="text" value=""></label></p>
+<p><label for="user_pass">Пароль<br>
+ <input class="input" id="password" name="password" size="20"
+  type="password" value=""></label></p> 
+	<p class="submit"><input class="button" name="login" type= "submit" value="Вход"></p>
+	<p class="regtext">Еще не зарегистрированы?<a href="register.php">Регистрация</a>!</p>
+   </form>
+ </div>
+  </div>
+<footer>
+© 2017 <a href="#">TAUSOFT</a>. Все права защищены.
 
+</footer>
 
 
 
